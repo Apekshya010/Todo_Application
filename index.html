@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Todolist</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="https://kit.fontawesome.com/99cc7b1bf3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./styles.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h2>To-Do List</h2>
+            </header>
+            <div class="main">
+                <label>
+                    <input id="task" type="text" placeholder="Write your todos here..."/>
+                </label>
+                <button class="add">+ADD</button>
+                <div class="filters">
+                    <button id="all" class="active">All</button>
+                    <button id="pending">Pending</button>
+                    <button id="completed">Completed</button>
+                    <button class="clear">Clear All</button>
+                </div>
+                <div class="todos"></div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

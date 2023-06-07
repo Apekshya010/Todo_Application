@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:  "Trirong", sans-serif;
+    background-color: rgb(222, 182, 246);
+    /* text-shadow: 4px 4px 4px #aaa; */
+}
+.container{
+    width:500px;
+    border-radius:10px;
+    box-shadow:8px 8px 8px -4px rgb(62, 5, 96);
+    margin:auto;
+    margin-top:10rem;
+    background-color: white;
+}
+header{
+    text-align: center;
+   text-shadow: 2px 2px 4px #aaa;
+   padding:0.5em;
+   
+}
+h2{
+    font-size: 1.8rem;;
+}
+.main{
+    margin:15px;
+}
+label input{
+    font-size: 1.2rem;
+    padding:5px;
+    width:70%;
+    border-radius: 5px;
+    border:0.5px solid grey;
+    outline: #aaa;
+}
+label input::placeholder{
+    font-size: 1rem;
+    color:rgb(172, 156, 182);
+}
+.add{
+    font-size: 1.2rem;
+    color:rgb(76, 19, 109);
+    padding:5px;
+    margin-left:20px;
+    border-radius: 5px;
+    border:none;
+    box-shadow:0 4px 10px -4px rgb(129, 3, 129);
+}
+.add:hover{
+    transform: scale(1.1);
+    cursor:pointer;
+}
+.filters{
+    margin:1.3rem 0;
+    display:flex;
+    justify-content: space-between;
+}
+.filters button{
+    font-size: 1.2rem;
+    color:rgb(76, 19, 109);
+    padding:5px;
+    background-color: white;
+    border:none;
+    border-bottom:3px solid rgb(241, 232, 246);
+}
+.filters button:hover,.filters button:focus{
+    cursor:pointer;
+    border-bottom:3px solid rgb(129, 3, 129);
+}
+.filters .clear{
+    background-color:  rgb(129, 3, 129);
+    color:#ffff;
+    border-radius:5px;
+}
+.filters .clear:hover{
+    background-color: rgb(216, 159, 250);
+}
+.todos{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap:2rem;
+    
+    font-size: 1.1rem;
+}
+.list{
+    position:relative;
+    display:flex;
+    gap:10px;
+}
+.list:last-child{
+    margin-bottom:20px;
+}
+.list .menu{
+    margin-left:auto;
+    cursor: pointer;
+}
+.checked{
+    text-decoration: line-through;
+}
+.controls{
+    border-radius:5px;
+    box-shadow:2px 2px 8px -4px purple;
+    position: absolute;
+    right:0;
+    top:-5px;
+    list-style-type: none; 
+    background-color: #ffff;
+    z-index:1; 
+    transform: scale(0);
+    transform-origin: top right;
+    transition: transform 0.3s ease;
+    
+}
+.controls li{
+    padding:5px 15px;
+    
+    
+}
+.controls li:hover{
+    background-color: #e6cfe9;
+}
+.list .menu:hover >.controls{
+    transform: scale(1);
+    cursor: pointer;
+    
+}
+    
